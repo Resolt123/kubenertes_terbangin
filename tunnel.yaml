@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cloudflared
+  namespace: app-namespace
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: cloudflared
+  template:
+    metadata:
+      labels:
+        app: cloudflared
+    spec:
+      containers:
+      - name: tunnel
+        image: resolt123/terbangin:CF
+        command: ["cloudflared","tunnel", "run", "richard-be"]
+        env:
+        - name: TUNNEL_TOKEN
+          value: "eyJhIjoiMWMzYzA5ODY2ZjU0ZDNkNzkzYTg0NzEwOGI0N2RiZjUiLCJ0IjoiMTliMTE3MTYtMTYwNi00NjU5LWI3ZmYtZDM2MzIyNjIzMDgwIiwicyI6IlpUQm1OREUxWldFdE1tRmtOUzAwTjJWaExUZzVNRFV0TmpOaE1tWmlaall3TjJVNCJ9"
