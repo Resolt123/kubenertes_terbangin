@@ -9,8 +9,8 @@ spec:
     server: https://kubernetes.default.svc
   source:
     repoURL: hhttps://github.com/Resolt123/kubenertes_terbangin.git
-    path: k8s
-    targetRevision: main
+    path: dev
+    targetRevision: HEAD
   project: default
   syncPolicy:
     automated:
