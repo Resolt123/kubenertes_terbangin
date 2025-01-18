@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: mysql
-        image: resolt123/terbangin:DB
+        image: resolt123/terbangin:DB-V1
         ports:
         - containerPort: 3306
         volumeMounts:

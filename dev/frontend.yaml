@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: resolt123/terbangin:FE-V2
+          image: resolt123/terbangin:FE-coba
           env:
             - name: VITE_BACKEND_API
               value: "http://localhost:30001"

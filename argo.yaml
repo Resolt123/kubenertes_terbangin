@@ -8,9 +8,9 @@ spec:
     namespace: default
     server: https://kubernetes.default.svc
   source:
-    repoURL: hhttps://github.com/Resolt123/kubenertes_terbangin.git
+    repoURL: https://github.com/Resolt123/kubenertes_terbangin.git
     path: dev
-    targetRevision: HEAD
+    targetRevision: master
   project: default
   syncPolicy:
     automated:
