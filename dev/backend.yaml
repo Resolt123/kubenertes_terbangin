@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: resolt123/terbangin:BE-coba3
+          image: resolt123/terbangin:BE-coba4
           ports:
             - containerPort: 3000
           resources:
